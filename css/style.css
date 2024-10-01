@@ -1,0 +1,443 @@
+/* General styling for the carousel */
+.carousel-item {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Styling for the carousel images */
+  .carousel-item img {
+    height: 500px; /* Adjust the height according to your design */
+    object-fit: cover;
+  }
+  
+  /* Positioning and styling for the text overlay */
+  .carousel-item h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .carousel-item p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    max-width: 600px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Styling for the previous and next buttons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .carousel-item h1 {
+      font-size: 28px;
+    }
+  
+    .carousel-item p {
+      font-size: 18px;
+    }
+  
+    .carousel-item img {
+      height: 300px;
+    }
+  }
+  
+
+  .navbar-nav{margin: auto;
+   /* display: flex;
+   justify-content: center; */
+  }
+
+  .navbar-nav a{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .navbar-nav a:hover{
+    color: #007bff;
+  }
+/* About Section */
+.about {
+    background-color: #f9f9f9; /* Light background for the section */
+    padding: 60px 0;
+}
+
+.about .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* About image */
+.about .img-fluid {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About section heading */
+.about h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* About paragraph text */
+.about p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* About section list */
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about ul li i {
+    color: #28a745; /* Icon color (green) */
+    margin-right: 10px;
+}
+
+/* Icon boxes */
+.icon-boxes {
+    margin-top: 30px;
+}
+
+.icon-boxes .col-md-6 {
+    margin-bottom: 20px;
+}
+
+/* Icon and title in icon boxes */
+.icon-boxes i {
+    font-size: 40px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.icon-boxes h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Icon boxes description text */
+.icon-boxes p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .about .col-lg-6 {
+        margin-bottom: 20px;
+    }
+    .icon-boxes .col-md-6 {
+        margin-bottom: 30px;
+    }
+}
+/* Container for the images */
+.image-container {
+    position: relative;
+    width: 500px; /* Adjust size as needed */
+    height: 400px; /* Adjust size as needed */
+}
+
+/* Main image */
+.main-image {
+    position: absolute;
+    top: 20px; /* Adjust position */
+    left: 20px; /* Adjust position */
+    width: 300px; /* Set the size of the circular image */
+    height: 100%;
+    border-radius: 50%; /* Make it a perfect circle */
+    border: 3px solid #fff; /* Optional: Add a border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    object-fit: cover; /* Make sure the image fits well in the circle */
+}
+
+/* Overlay image with circular shape */
+.overlay-image {margin:  20% 70px;
+    position: absolute;
+    top: 20px; /* Adjust position */
+    left: 20px; /* Adjust position */
+    width: 300px; /* Set the size of the circular image */
+    height: 100%;
+    border-radius: 50%; /* Make it a perfect circle */
+    border: 3px solid #fff; /* Optional: Add a border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    object-fit: cover; /* Make sure the image fits well in the circle */
+}
+
+/* Why Choose Us Section Styling */
+.why-choose-us {
+   background-image: url(./img/images\ \(8\).jpeg);
+    padding: 60px 0;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.why-choose-us h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.why-choose-us .section-subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.why-choose-us .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Choose Item Box Styling */
+.choose-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.choose-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.choose-item i {
+    font-size: 40px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.choose-item h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.choose-item p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Make sure there are 3 boxes in each row */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 calc(33.3333% - 20px);
+        max-width: calc(33.3333% - 20px);
+    }
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 991px) {
+    .col-md-6 {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Testimonial Section Styling */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Testimonial Item Styling */
+.testimonial-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial Content */
+.testimonial-content p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.testimonial-item i{
+    color: #28a745;
+}
+
+/* Testimonial Author */
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.testimonial-author img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.testimonial-author h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.testimonial-author span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-item {
+        max-width: 100%;
+    }
+}
+
+
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+   
+}
+.contact-form {width: 500px;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* margin-left: 60px; */
+    margin: auto;
+}
+.form-group {width: 200px;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.group{align-items: center;
+    width: 380px;
+}
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    transition: background-color 0.3s;
+}
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 20px 0;
+  }
+  .footer a {
+    color: #adb5bd;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: #007bff;
+  }
+  .social-icon i{
+    font-size: 20px;
+    margin: 10px;
+    color: #28a745;
+  }
+  .social-icon i:hover{
+    color: #007bff;
+  }
+  .footer .copyright {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #495057;
+  }
